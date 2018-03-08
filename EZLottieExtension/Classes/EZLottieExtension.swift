@@ -26,10 +26,16 @@ extension EZLottieExtension where Self : UIView {
             return LOTAnimationView()
         }
         set(newVal) {
+            for lottieView in self.subviews {
+                if let ltv = lottieView as? LOTAnimationView {
+                    ltv.removeFromSuperview()
+                }
+            }
             self.addSubview(newVal)
         }
     }
     
+   
     public mutating func addLottieView(_ view: LOTAnimationView, scale: CGFloat) {
         animateView = view
         view.isUserInteractionEnabled = false
