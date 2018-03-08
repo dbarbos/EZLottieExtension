@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EZLottieExtension'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'EZLottieExtension extends UIView with Lottie features.'
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,7 @@ EZLottieExtension extends UIView type including a function to add Lottie animati
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
+  s.pod_target_xcconfig = { "SWIFT_VERSION" => "4.0" }
 
   s.source_files = 'EZLottieExtension/Classes/**/*'
   
