@@ -1,0 +1,6 @@
+framework module Pods_EZLottieExtension_Tests {
+  umbrella header "Pods-EZLottieExtension_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

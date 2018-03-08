@@ -1,0 +1,27 @@
+{
+  "name": "EZLottieExtension",
+  "version": "0.1.0",
+  "summary": "A short description of EZLottieExtension.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/dbarbos/EZLottieExtension",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dbarbos": "Dilermando.Barbosa@t-systems.com.br"
+  },
+  "source": {
+    "git": "https://github.com/dbarbos/EZLottieExtension.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "EZLottieExtension/Classes/**/*",
+  "dependencies": {
+    "lottie-ios": [
+      "~> 2.5.0"
+    ]
+  }
+}
