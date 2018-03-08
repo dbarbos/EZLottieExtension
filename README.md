@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+It requires Lottie framework by Airbnb to work.
+
 ## Installation
 
 EZLottieExtension is available through [CocoaPods](http://cocoapods.org). To install
@@ -22,7 +24,7 @@ pod 'EZLottieExtension'
 
 ## Author
 
-dbarbos, Dilermando.Barbosa@t-systems.com.br
+Diler Barbosa, diler@cappriola.com
 
 ## License
 

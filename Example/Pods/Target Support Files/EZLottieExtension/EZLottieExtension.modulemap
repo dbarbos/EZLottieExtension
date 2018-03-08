@@ -1,0 +1,6 @@
+framework module EZLottieExtension {
+  umbrella header "EZLottieExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

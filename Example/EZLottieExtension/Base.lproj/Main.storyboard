@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +21,43 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vD-NV-Rjm">
+                                <rect key="frame" x="87" y="233" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="O4E-9Y-4WY"/>
+                                    <constraint firstAttribute="height" constant="200" id="UKX-9W-qHa"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="myButtonPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0Ef-OF-rrQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9b-k4-Xa4">
+                                <rect key="frame" x="16" y="466" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="l3v-8L-51T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5vD-NV-Rjm" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="VUN-xQ-qZW"/>
+                            <constraint firstItem="H9b-k4-Xa4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="bmK-sd-EyE"/>
+                            <constraint firstItem="H9b-k4-Xa4" firstAttribute="top" secondItem="5vD-NV-Rjm" secondAttribute="bottom" constant="33" id="hgL-mH-Xgj"/>
+                            <constraint firstItem="H9b-k4-Xa4" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="nc2-mJ-6gZ"/>
+                            <constraint firstItem="5vD-NV-Rjm" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="wLS-Er-L2E"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myButton" destination="5vD-NV-Rjm" id="8OO-Yk-N1o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
         </scene>
     </scenes>
 </document>

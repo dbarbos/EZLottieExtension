@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'EZLottieExtension'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of EZLottieExtension.'
+  s.summary          = 'EZLottieExtension extends UIView with Lottie features.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+EZLottieExtension extends UIView type including a function to add Lottie animations to a view by centralizing it and giving the user option to determine the animation scale. This extension is very handy when creating buttons. By simply adding an animation to a button EZLottieExtension will align the animation fix it´s interaction behavior and include haptic feedback for pressing action.
                        DESC
 
   s.homepage         = 'https://github.com/dbarbos/EZLottieExtension'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'dbarbos' => 'Dilermando.Barbosa@t-systems.com.br' }
+  s.author           = { 'dbarbos' => 'diler@cappriola.com' }
   s.source           = { :git => 'https://github.com/dbarbos/EZLottieExtension.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'EZLottieExtension/Classes/**/*'
   
@@ -38,5 +38,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'lottie-ios', '~> 2.5.0'
 end

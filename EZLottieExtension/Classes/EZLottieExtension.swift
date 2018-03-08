@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 import Lottie
 
-protocol EZLottieExtension {
+public protocol EZLottieExtension {
     var animateView: LOTAnimationView { get set }
 }
 
 extension EZLottieExtension where Self : UIView {
     
-    var animateView: LOTAnimationView {
+    public var animateView: LOTAnimationView {
         get {
             for lottieView in self.subviews {
                 if let ltv = lottieView as? LOTAnimationView {
@@ -30,21 +30,24 @@ extension EZLottieExtension where Self : UIView {
         }
     }
     
-    mutating func addLottieView(_ view: LOTAnimationView, scale: CGFloat) {
+    public mutating func addLottieView(_ view: LOTAnimationView, scale: CGFloat) {
         animateView = view
         view.isUserInteractionEnabled = false
         self.addSubview(view)
         view.frame = self.frame
-        view.translatesAutoresizingMaskIntoConstraints = false
+        view.translatesAutoresizingMaskIntoConstraints = true
         view.center = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
         view.transform = CGAffineTransform(scaleX: scale, y: scale)
     }
     
-    func playAnimation() {
+    public func playAnimation() {
         animateView.stop()
         animateView.play()
-        let impact = UIImpactFeedbackGenerator()
-        impact.impactOccurred()
+        if #available(iOS 10.0, *) {
+            let impact = UIImpactFeedbackGenerator()
+            impact.impactOccurred()
+        }
+        
     }
 }
 

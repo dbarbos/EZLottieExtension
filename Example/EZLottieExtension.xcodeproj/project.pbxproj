@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F6892302051783500847DA5 /* done_button.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F68922F2051783500847DA5 /* done_button.json */; };
 		50BF61194B358A1FE65789DB /* Pods_EZLottieExtension_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE13A743BBCE3D25C5D56B8 /* Pods_EZLottieExtension_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F68922F2051783500847DA5 /* done_button.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = done_button.json; sourceTree = "<group>"; };
 		4B4903BF2E35910004B255BA /* Pods-EZLottieExtension_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZLottieExtension_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EZLottieExtension_Tests/Pods-EZLottieExtension_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		60521E06A47B519916C5D6E3 /* Pods_EZLottieExtension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZLottieExtension_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* EZLottieExtension_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZLottieExtension_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,11 +42,11 @@
 		607FACE51AFB9204008FA782 /* EZLottieExtension_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EZLottieExtension_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		64B87F16725140AAED89F247 /* EZLottieExtension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = EZLottieExtension.podspec; path = ../EZLottieExtension.podspec; sourceTree = "<group>"; };
-		67B254D120C2E845BC242394 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		64B87F16725140AAED89F247 /* EZLottieExtension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EZLottieExtension.podspec; path = ../EZLottieExtension.podspec; sourceTree = "<group>"; };
+		67B254D120C2E845BC242394 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6B9DA0CF561A2E9FB895FAB7 /* Pods-EZLottieExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZLottieExtension_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EZLottieExtension_Example/Pods-EZLottieExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7EE13A743BBCE3D25C5D56B8 /* Pods_EZLottieExtension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZLottieExtension_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B776DA80E2DD2CABF52E30AB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B776DA80E2DD2CABF52E30AB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B9EA9059CE3BAF76AFE2F95B /* Pods-EZLottieExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZLottieExtension_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EZLottieExtension_Tests/Pods-EZLottieExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D8CA7B3DBED435D062012FE8 /* Pods-EZLottieExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZLottieExtension_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EZLottieExtension_Example/Pods-EZLottieExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 		607FACD21AFB9204008FA782 /* Example for EZLottieExtension */ = {
 			isa = PBXGroup;
 			children = (
+				3F68922F2051783500847DA5 /* done_button.json */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				3F6892302051783500847DA5 /* done_button.json in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -323,10 +327,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EZLottieExtension_Example/Pods-EZLottieExtension_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EZLottieExtension/EZLottieExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZLottieExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
