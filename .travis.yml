@@ -10,6 +10,7 @@ language: swift
 
 script:
 - gem install cocoapods # Since Travis is not always on latest version
-- pod update --project-directory=Example
+- pod repo update
+- pod install --project-directory=Example
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/EZLottieExtension.xcworkspace -scheme EZLottieExtension-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
