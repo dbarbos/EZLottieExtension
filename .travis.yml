@@ -5,12 +5,11 @@
 osx_image: xcode9.2
 language: swift
 # cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-
-script:
+podfile: Example/Podfile
+before_install:
 - gem install cocoapods # Since Travis is not always on latest version
 - pod repo update
-- pod install --project-directory=Example
+- pod update --project-directory=Example
+script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/EZLottieExtension.xcworkspace -scheme EZLottieExtension-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint

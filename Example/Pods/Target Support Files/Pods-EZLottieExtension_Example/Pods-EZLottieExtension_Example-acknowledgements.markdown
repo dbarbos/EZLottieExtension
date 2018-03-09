@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## EZLottieExtension
 
-Copyright (c) 2018 dbarbos <Dilermando.Barbosa@t-systems.com.br>
+Copyright (c) 2018 Diler Barbosa <diler@cappriola.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
